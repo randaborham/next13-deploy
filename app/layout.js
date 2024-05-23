@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
-import "../../app33/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-import "../../app33/node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Bootstrap from "./(Components)/Bootstrap";
 import "./globals.css";
 import Navbar from "./(Components)/Navbar/Navbar";

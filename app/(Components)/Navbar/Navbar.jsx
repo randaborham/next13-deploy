@@ -7,14 +7,14 @@ import Image from "next/image";
 export default function Navbar() {
   let path = usePathname();
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <Link class="navbar-brand fw-bolder fs-3 me-5 text-danger" href="#">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container">
+        <Link className="navbar-brand fw-bolder fs-3 me-5 text-danger" href="#">
           Amazon
           <Image src={img2} alt="product.title" width={40} height={30} />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -22,13 +22,13 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item me-2 fs-4">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item me-2 fs-4">
               <Link
-                class={
+                className={
                   path === "/" ? "nav-link fw-bolder text-danger" : "nav-link"
                 }
                 aria-current="page"
@@ -37,9 +37,9 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li class="nav-item me-2 fs-4">
+            <li className="nav-item me-2 fs-4">
               <Link
-                class={
+                className={
                   path === "/Products"
                     ? "nav-link fw-bolder text-danger"
                     : "nav-link"
@@ -50,9 +50,9 @@ export default function Navbar() {
                 Products
               </Link>
             </li>
-            <li class="nav-item fs-4">
+            <li className="nav-item fs-4">
               <Link
-                class={
+                className={
                   path === "/Blog"
                     ? "nav-link fw-bolder text-danger"
                     : "nav-link"
@@ -64,22 +64,22 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item me-2">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item me-2">
               <i
-                class="fa-solid fa-basket-shopping fa-2x me-3"
+                className="fa-solid fa-basket-shopping fa-2x me-3"
                 style={{ cursor: "pointer" }}
               ></i>
             </li>
-            <li class="nav-item me-2">
+            <li className="nav-item me-2">
               <i
-                class="fa-regular fa-heart fa-2x me-4 pe-auto"
+                className="fa-regular fa-heart fa-2x me-4 pe-auto"
                 style={{ cursor: "pointer" }}
               ></i>
             </li>
-            <li class="nav-item me-2">
+            <li className="nav-item me-2">
               <i
-                class="fa-regular fa-user fa-2x me-2 pe-auto"
+                className="fa-regular fa-user fa-2x me-2 pe-auto"
                 style={{ cursor: "pointer" }}
               ></i>
             </li>
